@@ -116,9 +116,10 @@ async def start_command(client: Client, message: Message):
             [InlineKeyboardButton("𝙏𝙀𝙉𝙏𝘼𝙉𝙂 𝙊𝙒𝙉𝙀𝙍", callback_data="about")],
             [
                 InlineKeyboardButton("•𝘾𝙃𝘼𝙉𝙉𝙀𝙇 1•", url=client.invitelink),
-                InlineKeyboardButton("•𝘾𝙃𝘼𝙉𝙉𝙀𝙇 2•", url=client.invitelink2),],
+                InlineKeyboardButton("•GROUPS •", url=client.invitelink2),],
+                InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇 2", url=client.invitelink3),],
             [
-                InlineKeyboardButton("𝙏𝙐𝙏𝙐𝙋 𝘽𝘼𝘽𝙐", callback_data="close"),
+                InlineKeyboardButton("𝙏𝙐𝙏𝙐𝙋", callback_data="close"),
             ],
         ]
         await message.reply_text(
@@ -146,8 +147,8 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇 1", url=client.invitelink), 
+            InlineKeyboardButton("GROUP", url=client.invitelink2),
             InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇 2", url=client.invitelink2),
-        ],
     ]
     try:
         buttons.append(
