@@ -15,8 +15,7 @@ from config import (
     CHANNEL_ID,
     FORCE_SUB_CHANNEL,
     FORCE_SUB_GROUP,
-    FORCE_SUB_CHANNEL1
-    LOGGER,
+    FORCE_SUB_CHANNEL1,
     OWNER,
     TG_BOT_TOKEN,
     TG_BOT_WORKERS,
@@ -100,6 +99,7 @@ class Bot(Client):
             )
             sys.exit()
 
+       
         self.set_parse_mode("html")
         self.LOGGER(__name__).info(
             f"[🔥 BERHASIL DIAKTIFKAN! 🔥]\n\nBOT Dibuat oleh @{OWNER}\nJika @{OWNER} Membutuhkan Bantuan, Silahkan Tanyakan ke https://t.me/RYUUSHINNI"
