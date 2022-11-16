@@ -21,18 +21,11 @@ Saya Kira Ini Akan Bermanfaat Bagi Banyak Orang.. 😇.
 
 #
 ## Installation
-### 𝗗𝗲𝗽𝗹𝗼𝘆 𝗼𝗻 𝗛𝗲𝗿𝗼𝗸𝘂
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RyuuXS/ShinFile-Sharing)
-
-**Tonton Video Tutorial Ini di YouTube untuk Bantuan memasang di Heroku**<br>
-<a href="https://youtu.be/O2tieQgzYZg">
-  <img src="https://img.shields.io/badge/How%20to-Deploy-red?logo=youtube" width="147">
-</a><br>
 
 #### Deploy in your VPS
 ````bash
-git clone https://github.com/sagaProjects/sagafile2subs
-cd sagafile2subs
+git clone https://github.com/sagaProjects/FileSubs
+cd FileSubs
 pip3 install -r requirements.txt
 # <Create config.py appropriately>
 python3 main.py
