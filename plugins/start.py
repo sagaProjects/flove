@@ -115,9 +115,8 @@ async def start_command(client: Client, message: Message):
         buttons = [
             [InlineKeyboardButton("𝙏𝙀𝙉𝙏𝘼𝙉𝙂 𝙊𝙒𝙉𝙀𝙍", callback_data="about")],
             [
-                InlineKeyboardButton("•𝘾𝙃𝘼𝙉𝙉𝙀𝙇 1•", url=client.invitelink),
-                InlineKeyboardButton("•GROUPS •", url=client.invitelink2),],
-                InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇 2", url=client.invitelink3),],
+                InlineKeyboardButton("•𝘾𝙃𝘼𝙉𝙉𝙀𝙇•", url=client.invitelink),
+                InlineKeyboardButton("•𝐆𝐑𝐎𝐔𝐏•", url=client.invitelink2),],
             [
                 InlineKeyboardButton("𝙏𝙐𝙏𝙐𝙋", callback_data="close"),
             ],
@@ -146,9 +145,9 @@ async def start_command(client: Client, message: Message):
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇 1", url=client.invitelink), 
-            InlineKeyboardButton("GROUP", url=client.invitelink2),
-            InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇 2", url=client.invitelink2),
+            InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇", url=client.invitelink), 
+            InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏", url=client.invitelink2),
+        ],
     ]
     try:
         buttons.append(
@@ -185,7 +184,6 @@ async def get_users(client: Bot, message: Message):
     )
     users = await full_userbase()
     await msg.edit(f"{len(users)} <b>Pengguna menggunakan bot ini</b>")
-
 
 @Bot.on_message(filters.private & filters.command("broadcast") & filters.user(ADMINS))
 async def send_text(client: Bot, message: Message):
