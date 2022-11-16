@@ -33,12 +33,10 @@ DB_URI = os.environ.get("DATABASE_URL", "postgres://obhgjqqm:H7DBFEyfQEEIbzqrwzo
 # Username CH & Group
 CHANNEL = os.environ.get("CHANNEL", "ASUPAN BELLEZA")
 GROUP = os.environ.get("GROUP", "ʙᴇʟʟᴇᴢᴀ-ɴʏᴇɴʏᴇ⎊225")
-CHANNEL1 = os.environ.get("CHANNEL1", "ʀɪɴᴛɪʜᴀɴ ʜᴀᴛɪ")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001327370766"))
 FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001474035788"))
-FORCE_SUB_CHANNEL1 = int(os.environ.get("FORCE_SUB_CHANNEL1", "-1001541395503"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -62,7 +60,7 @@ FORCE_MSG = os.environ.get(
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
 # Setel True jika Anda ingin Menonaktifkan tombol Bagikan Kiriman Saluran Anda
-DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == "True"
+DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", True) == "True"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1540632666)
