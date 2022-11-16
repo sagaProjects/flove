@@ -88,4 +88,4 @@ async def get_message_id(client, message):
             return msg_id
 
 
-subscribed = filters.create(is_subscribed
+subscribed = filters.create(is_subscribed)
