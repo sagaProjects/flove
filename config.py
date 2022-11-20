@@ -10,7 +10,7 @@ import os
 from logging.handlers import RotatingFileHandler
 
 # Bot token dari @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5505829025:AAEEjzAKwfHMVvbON2PVenUBjOdeWLXZxX0")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5971713199:AAFRtoxaReQYf0uT0LQ58yHmVpUU0Wou50M")
 
 # API ID Anda dari my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "13515342"))
@@ -46,7 +46,7 @@ START_MSG = os.environ.get(
     "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5216770582").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5216770582 1385170049").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
