@@ -10,33 +10,33 @@ import os
 from logging.handlers import RotatingFileHandler
 
 # Bot token dari @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5971713199:AAFRtoxaReQYf0uT0LQ58yHmVpUU0Wou50M")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5863064719:AAE0T-ZEv4N5-JO9LvkyC6LqtsU1xbcB5_c")
 
 # API ID Anda dari my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "13515342"))
+APP_ID = int(os.environ.get("APP_ID", "13663693"))
 
 # API Hash Anda dari my.telegram.org
-API_HASH = os.environ.get("API_HASH", "8cb1a48861ddd8063adb972a44b2b1f6")
+API_HASH = os.environ.get("API_HASH", "1f93516405fced4f28ada0f2e1496d40")
 
 # ID Channel Database
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001600756628"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001802776317"))
 
 # OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "2061726020"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5029255799"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "xxzeahorny")
+OWNER = os.environ.get("OWNER", "Tytydaj")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "postgres://obhgjqqm:H7DBFEyfQEEIbzqrwzomsBtqCftuaahm@peanut.db.elephantsql.com/obhgjqqm")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://ygugoklo:GuavWOBSVwe7M527C5zZ1Oh1Wj5qJJC_@peanut.db.elephantsql.com/ygugoklo")
 
 # Username CH & Group
-CHANNEL = os.environ.get("CHANNEL", "ASUPAN BELLEZA")
-GROUP = os.environ.get("GROUP", "ʙᴇʟʟᴇᴢᴀ-ɴʏᴇɴʏᴇ⎊225")
+CHANNEL = os.environ.get("CHANNEL", "")
+GROUP = os.environ.get("GROUP", "")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001327370766"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001474035788"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001666792521"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001843106044"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -46,7 +46,7 @@ START_MSG = os.environ.get(
     "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5216770582 1385170049").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5029255799 2013745499").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
